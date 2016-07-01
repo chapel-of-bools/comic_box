@@ -1,2 +1,4 @@
 <h2><%= @comic.title %></h2>
 <%= link_to "(edit)", edit_publisher_comic_path(@comic.publisher, @comic) %>
+<br>
+<img class='cover-image' src="<%= @comic.cover_url %>">
