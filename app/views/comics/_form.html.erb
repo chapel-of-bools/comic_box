@@ -1,0 +1,24 @@
+<%= form_for([@publisher, @comic]) do |f| %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :issue_no %>
+  <%= f.text_field :issue_no %>
+
+  <%= f.label :authors %>
+  <%= f.text_field :authors %>
+
+  <%= f.label :artists %>
+  <%= f.text_field :artists %>
+
+  <%= f.label :year %>
+  <%= f.text_field :year %>
+
+  <%= f.label :cover_url %>
+  <%= f.text_field :cover_url %>
+
+  <%= f.label :publisher %>
+  <%= f.text_field :publisher %>
+
+<% end %>
