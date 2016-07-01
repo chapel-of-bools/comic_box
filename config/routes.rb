@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  root to: 'publisher#index'
-  resources :publishers
+  root to: 'publishers#index'
+  resources :publishers do
+    resources :comics
+  end
   resources :comics
 end

@@ -1,0 +1,11 @@
+<h1>ComicBox</h1>
+
+<ul>
+  <% @publishers.each do |publisher| %>
+    <li>
+      <a href="/publishers/<%= publisher.id %>">
+        <%= publisher.name %>
+      </a>
+    </li>
+   <% end %>
+</ul>

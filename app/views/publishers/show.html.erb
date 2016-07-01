@@ -1,0 +1,12 @@
+<h2><%= @publisher.name %> <a href="/publishers/<%= @publisher.id %>/edit">(edit)</a></h2>
+<h4><%= @publisher.nationality %></h4>
+
+<h3>Comics <%= link_to "(+)", new_publisher_comic_path(@publisher) %></h3>
+<ul>
+  <% @publisher.comics.each do |comic| %>
+    <li>
+      <%= link_to "#{comic.title} (##{comic.issue_no})", publisher_comic_path(@publisher, comic) %>
+    </li>
+
+  <% end %>
+</ul>

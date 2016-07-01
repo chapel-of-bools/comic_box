@@ -1,12 +1,12 @@
 def get_publisher_data
   publisher_data = {
-    "PUBLISHERNAME" => {
-                    name: "PUBLISHER NAME",
-                    nationality: "NATIONALITY",
+    "dccomics" => {
+                    name: "DC Comics",
+                    nationality: "USA",
                   },
-    "PUBLISHERNAME" => {
-                    name: "PUBLISHER NAME",
-                    nationality: "NATIONALITY",
+    "marvelcomics" => {
+                    name: "Marvel Comics",
+                    nationality: "USA",
                   },
     }
   return publisher_data
