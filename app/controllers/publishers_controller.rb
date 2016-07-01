@@ -6,4 +6,8 @@ class PublishersController < ApplicationController
   def show
     @publisher = Publisher.find(params[:id])
   end
+
+  def new
+    @publisher = Publisher.create
+  end
 end
