@@ -2,4 +2,4 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Delete Comic', publisher_comic_path(@comic), method: :delete, class: 'delete' %>
+<%= link_to 'Delete Comic', publisher_comic_path(@comic.publisher, @comic), method: :delete, class: 'delete' %>

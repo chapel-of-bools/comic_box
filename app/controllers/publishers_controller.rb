@@ -27,9 +27,9 @@ class PublishersController < ApplicationController
   end
 
   def destroy
-    @publisher = Publisher.find(parmas[:id])
+    @publisher = Publisher.find(params[:id])
     @publisher.destroy
-    redirect_to publishers_path 
+    redirect_to publishers_path
   end
 
   private

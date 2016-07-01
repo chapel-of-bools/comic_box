@@ -1,2 +1,2 @@
 <h2><%= @comic.title %></h2>
-<a href="/comics/<%= @comic.id %>/edit">(edit)</a></h2>
+<%= link_to "(edit)", edit_publisher_comic_path(@comic.publisher, @comic) %>
