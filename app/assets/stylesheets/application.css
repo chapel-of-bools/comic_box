@@ -23,6 +23,7 @@
 
 div{
   text-align: left;
+  background-color: white;
 }
 
 h1{
@@ -43,6 +44,5 @@ h1{
 }
 
 ul{
-  list-style: square;
   list-style-position: inside;
 }
