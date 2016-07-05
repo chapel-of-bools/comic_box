@@ -2,7 +2,7 @@
 <a href="/publishers/<%= @publisher.id %>/edit">(edit)</a>
 <h4><%= @publisher.nationality %></h4>
 
-<h3>Comics <%= link_to "(+)", new_publisher_comic_path(@publisher) %></h3>
+<h3>Comics in your collection from <%= @publisher.name %>: <%= link_to "(+)", new_publisher_comic_path(@publisher) %></h3>
 <ul>
   <% @publisher.comics.each do |comic| %>
     <li>
