@@ -1,8 +1,8 @@
 <h2><%= @comic.title %></h2>
 <h3>Issue #<%= @comic.issue_no %></h3>
-<%= link_to "(edit)", edit_publisher_comic_path(@comic.publisher, @comic) %>
 <br>
 <img class='cover-image' src="<%= @comic.cover_url %>">
 <h3>Authors: <%= @comic.authors %></h3>
 <h3>Artists: <%= @comic.artists %></h3>
 <h3>Year: <%= @comic.year %></h3>
+<h3><%= link_to "Edit this comic", edit_publisher_comic_path(@comic.publisher, @comic) %></h3>
