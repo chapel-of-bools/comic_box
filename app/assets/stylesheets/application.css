@@ -14,6 +14,7 @@
  *= require_self
  */
  html{
+   background-color: #76787B;
    background-image: url("./indexbackground.png");
  }
 
@@ -22,11 +23,34 @@
   text-align: center;
  }
 
+h2{
+  font-size: 30px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+h3{
+  margin: 0px;
+}
+
+.show_comic{
+  text-align: center;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 500px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .cover-image{
+  background-color: white;
   max-width: 300px;
   border: 5px solid black;
+  border-style: groove;
+  border-radius: 15px;
   padding: 3px;
-  background-color: white;
 }
 
 div{
