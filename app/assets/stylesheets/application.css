@@ -44,6 +44,36 @@ h3{
   margin-right: auto;
 }
 
+.show_pub{
+  text-align: center;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 500px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input{
+  margin: 5px;
+}
+
+.edit{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: white;
+  border: 5px solid black;
+  border-radius: 15px;
+  width: 500px;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .cover-image{
   background-color: white;
   max-width: 300px;
@@ -80,5 +110,6 @@ h1{
 }
 
 ul{
-  list-style-position: inside;
+  padding-left: 0px;
+  list-style: none;
 }
