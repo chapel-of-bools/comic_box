@@ -1,6 +1,5 @@
 <div class="show_pub">
 <h2><%= @publisher.name %></h2>
-<a href="/publishers/<%= @publisher.id %>/edit">(edit)</a>
 <h4><%= @publisher.nationality %></h4>
 
 <h3>Comics in your collection from <%= @publisher.name %>: <%= link_to "(+)", new_publisher_comic_path(@publisher) %></h3>
@@ -12,3 +11,4 @@
   <% end %>
 </ul>
 </div>
+<a class="edit_link" href="/publishers/<%= @publisher.id %>/edit">Edit this publisher</a>

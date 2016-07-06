@@ -23,6 +23,16 @@
   text-align: center;
  }
 
+ h1{
+   font-family: 'Bangers', cursive;
+   font-size: 100px;
+   text-shadow: 0px 15px 20px #21252B;
+   color: black;
+   -webkit-text-fill-color: white;
+   -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: black;
+ }
+
 h2{
   font-size: 30px;
   margin-top: 5px;
@@ -31,6 +41,19 @@ h2{
 
 h3{
   margin: 0px;
+}
+
+h4{
+  margin: 0px;
+  padding: 3px;
+}
+
+.edit_link{
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: white;
+  padding: 2px;
 }
 
 .show_comic{
@@ -88,17 +111,8 @@ div{
   background-color: white;
 }
 
-h1{
-  font-family: 'Bangers', cursive;
-  font-size: 60px;
-  text-shadow: 0px 5px 5px #76787B;
-  color: black;
-  -webkit-text-fill-color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-}
-
 .index_box{
+  text-align: center;
   padding: 10px;
   margin: 10px;
   margin-left: auto;
@@ -106,7 +120,7 @@ h1{
   width: 400px;
   border: 5px solid black;
   border-radius: 15px;
-  box-shadow: 0px 5px 5px #76787B;
+  box-shadow: 0px 15px 20px #21252B;
 }
 
 ul{
