@@ -80,6 +80,8 @@ i{
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 15px 20px #21252B;
+  background-image: url("./divback.png");
+  background-size: cover;
 }
 
 .show_pub{
@@ -92,6 +94,8 @@ i{
   margin-left: auto;
   margin-right: auto;
   box-shadow: 0px 15px 20px #21252B;
+  background-image: url("./divback.png");
+  background-size: cover;
 }
 
 input{
@@ -137,6 +141,8 @@ div{
   border: 5px solid black;
   border-radius: 15px;
   box-shadow: 0px 15px 20px #21252B;
+  background-image: url("./divback.png");
+  background-size: cover;
 }
 
 ul{
