@@ -9,9 +9,15 @@
   <script src="https://use.fontawesome.com/1bbaca3fad.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 </head>
-<h1>ComicBox</h1>
 <body>
-
+  <h1>ComicBox</h1>
+  <% if !current_user %>
+    <nav><%= link_to "Sign Up", new_user_registration_path %></nav> | <nav><%= link_to "Sign In", new_user_session_path %></nav>
+  <% else %>
+    <nav><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></nav>
+  <% end %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
 <%= yield %>
 
 </body>
