@@ -6,6 +6,7 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <%= favicon_link_tag '/favicon.ico' %>
+  <script src="https://use.fontawesome.com/1bbaca3fad.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
 </head>
 <h1>ComicBox</h1>
@@ -14,5 +15,5 @@
 <%= yield %>
 
 </body>
-<p><%= link_to "Home", publishers_path(@publishers) %></p>
+<a class="home" href="/publishers/"><i class="fa fa-archive" aria-hidden="true"></i></a>
 </html>

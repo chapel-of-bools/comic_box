@@ -3,12 +3,13 @@
 <h4><%= @publisher.nationality %></h4>
 
 <h3>Comics in your collection from <%= @publisher.name %>: <%= link_to "(+)", new_publisher_comic_path(@publisher) %></h3>
-<ul>
+<h3><ul>
   <% @publisher.comics.each do |comic| %>
     <li>
       <%= link_to "#{comic.title} (##{comic.issue_no})", publisher_comic_path(@publisher, comic) %>
     </li>
   <% end %>
-</ul>
+</ul></h3>
+<h3><a href="/publishers/<%= @publisher.id %>/edit">Edit this publisher</a></h3>
 </div>
-<a class="edit_link" href="/publishers/<%= @publisher.id %>/edit">Edit this publisher</a>
+<br>
