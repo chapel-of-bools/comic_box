@@ -59,6 +59,7 @@ i{
   padding: 3px;
   border-radius: 5px;
   border: 3px solid black;
+  box-shadow: 0px 15px 20px #21252B;
 }
 
 .edit_link{
