@@ -32,7 +32,7 @@ class ComicsController < ApplicationController
   def destroy
     @comic = Comic.find(params[:id])
     @comic.destroy
-    redirect_to publisher_comics_path
+    redirect_to @comic.publisher
   end
 
   private

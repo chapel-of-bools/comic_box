@@ -1,0 +1,12 @@
+<div class="index_box">
+<h2>All Comics</h2>
+<ul>
+  <% @comics.each do |comic| %>
+    <li>
+      <a href="/comics/<%= comic.id %>">
+        <%= comic.title %>
+      </a>
+    </li>
+   <% end %>
+</ul>
+</div>
