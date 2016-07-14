@@ -11,6 +11,10 @@ require_relative './publisher_data.rb'
 Comic.destroy_all
 Publisher.destroy_all
 
+# NHO: while seeding like this works, you can significantly cut down on your complexity
+# using Active Record helpers and bulk creation
+
+
 comic_data = get_comic_data()
 publisher_data = get_publisher_data()
 

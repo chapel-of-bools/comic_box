@@ -1,4 +1,6 @@
 class ComicsController < ApplicationController
+  # NHO: what lines are repetive in this controller?
+  # One way to DRY up your controller is to use a before_action to run a method
   def index
     @comics = Comic.all
   end
@@ -14,7 +16,7 @@ class ComicsController < ApplicationController
 
   def create
     @publisher = Publisher.find(params[:publisher_id])
-    @comic = Comic.create!(comic_params.merge(publisher: @publisher))
+    @comic = Comic.create!(comic_params.merge(publisher: @publisher)) # another way to do this is @publisher.comics.create!(comic_params) then you dont need to merge in @publisher
     redirect_to publisher_comic_path(@publisher, @comic)
   end
 
